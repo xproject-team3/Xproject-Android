@@ -39,7 +39,7 @@ public class Main2Activity extends AppCompatActivity {
             array[i] = array[i].replaceFirst("_", "월 ");
             array[i] = array[i].replaceFirst("_", "일      ");
             array[i] = array[i].replaceFirst("_", "시 ");
-            array[i] = array[i].replaceFirst("_", "분 ");
+            array[i] = array[i].concat("분 ");
 
             mDatas.add(array[i]);
         }
@@ -89,5 +89,6 @@ public class Main2Activity extends AppCompatActivity {
             e.printStackTrace();
         }
         return data;
-    }}
+    }
+}
 

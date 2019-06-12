@@ -35,11 +35,11 @@ public class StateActivity extends AppCompatActivity {
         image = image.replace("월 ", "_");
         image = image.replace("일      ", "_");
         image = image.replace("시 ", "_");
-        image = image.replace("분 ", "_");
+        image = image.replace("분 ", "");
         image = image.replace(" ", "");
 
         new DownloadImageTask((ImageView) findViewById(R.id.imageView5))
-                .execute("http://10.0.2.2/d"+image+".jpg");
+                .execute("http://10.0.2.2/"+image+".jpg");
 
 //        String file = "@drawable/textimage";
 //        String packName = this.getPackageName();
